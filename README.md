@@ -7,4 +7,6 @@ Various code for our epscor project
 
 ![image](https://user-images.githubusercontent.com/58920927/120802891-f37aec00-c510-11eb-8252-15b44e59383c.png)
 
-![image](https://user-images.githubusercontent.com/58920927/120807123-9afa1d80-c515-11eb-950e-d69e00f1c865.png)
+![addDateRange](https://user-images.githubusercontent.com/58920927/120811017-90418780-c519-11eb-8b2f-5d533cf0a96f.PNG)
+
+![addBox](https://user-images.githubusercontent.com/58920927/120811034-933c7800-c519-11eb-9b7f-212ea99ba0b5.PNG)
