@@ -16,14 +16,13 @@ class wicced():
         self.query_start = 'CQL_FILTER='
         self.maxFeatures = 'maxFeatures={}'.format(max)
 #         print(self.maxFeatures)
-    ## addDate
-    ## sets the specific date and time for retreival from the database
-    ## params:
-    ##    date - a string of the format YYYY-mm-dd HH:MM
-    ## 
+
     def addDate(self, date):
-        self.date = self.dt.datetime.strptime(date, '%Y-%m-%d %H:%M') 
-    
+        ## date : string with format %Y-%m-%d %H:%M
+        ## provides time for buildUrl
+        #self.date = dt.datetime.strptime(date, '%Y-%m-%d %H:%M') 
+        self.date = pd.to_datetime(date, infer_datetime_format = True)    
+        
     ## addDateRange
     ## sets a specific date range for retrieval
     ## params:
