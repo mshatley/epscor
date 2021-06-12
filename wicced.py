@@ -2,10 +2,13 @@ import time
 import geopandas as gpd
 import urllib
 import datetime as dt
+import pandas as pd
 
 class wicced():
     #constructor
-    def __init__(self, max = 0, data_source = 'cema', data_format = 'application/json', ): # parameterized __init__ to pass 
+    def __init__(self, max = 0, data_source = 'cema', data_format = 'application/json', ): # parameterized __init__ to pass
+        ## Data source is where the data will be coming from
+        ## Data format is only application or json
         self.server_url = 'https://udel-geoserver.nautilus.optiputer.net/geoserver/'       # useful params on creation
         self.workspace = 'cite'
         self.service = 'ows?service=WFS'
@@ -16,28 +19,43 @@ class wicced():
         self.query_start = 'CQL_FILTER='
         self.maxFeatures = 'maxFeatures={}'.format(max)
 #         print(self.maxFeatures)
-
+    ## addDate
+    ## sets the specific date and time for retreival from the database
+    ## params:
+    ##    date - a string of the format YYYY-mm-dd HH:MM
+    ## 
     def addDate(self, date):
         ## date : string with format %Y-%m-%d %H:%M
         ## provides time for buildUrl
         #self.date = dt.datetime.strptime(date, '%Y-%m-%d %H:%M') 
-        self.date = pd.to_datetime(date, infer_datetime_format = True)    
-        
+        self.date = pd.to_datetime(date, infer_datetime_format = True)
+
+    
+    
     ## addDateRange
     ## sets a specific date range for retrieval
     ## params:
     ##   start - a string of the format YYYY-mm-dd HH:MM for the starting time
     ##   end - a string of the format YYYY-mm-dd HH:MM for the ending time 
     def addDateRange(self, start, end):
-        self.start = self.dt.datetime.strptime(start, '%Y-%m-%d %H:%M')
-        self.end = self.dt.datetime.strptime(end, '%Y-%m-%d %H:%M')
+        ## date range : find the dates in any range
+        ## provides time for buildURL
+        ## Values taken are strings
+        self.start = dt.datetime.strptime(start, '%Y-%m-%d %H:%M')
+        self.end = dt.datetime.strptime(end, '%Y-%m-%d %H:%M')
+        
+    
     
     ## addDataType
     ## set the data type for retreival
     ## params:
     ##    type - a string containing the data type to be retreived
     def addDataType(self, type):
+        #data type: be able to get specific
+        #type of data out of a list.
+        ##Values taken are strings
         self.data_type = type
+
         
     ## addBox
     ## add a bounding box to subset data retreived to a specific area
@@ -47,10 +65,16 @@ class wicced():
     ##    lr_lon - a number representing the Lower-Right longitudece, but then now t
     ##    lr_lat - a number representing the Lower-Right latitude
     def addBox(self, ul_lon, ul_lat, lr_lon, lr_lat):
+        ## addBox: add coordinates to map out
+        ## an area. ul_lon and ul_lat is upper
+        ## left part of the box and lr_lon, lr_lat
+        ## is lower right part of box.
+        ## Value are numbers
         self.ul_lon = ul_lon
         self.ul_lat = ul_lat
         self.lr_lon = lr_lon
         self.lr_lat = lr_lat
+    
         
     ## changeFormat
     ## select a different format for the returned data
@@ -58,13 +82,21 @@ class wicced():
     ##    format - a string containing the desired format
     ##             valid options: csv, application/json
     def changeFormat(self, format):
+        # changeFormat: Changes to the kind of file requested
+        # csv or application/json
         self.format = "outputFormat=" + format
+        
         
     ## buildUrl
     ## pulls the input user selections together to create a URL for retreiving data
     ## Params: None
     ## Return Value: a string containing the encoded URL
+    
     def buildUrl(self):
+        ## Put together a bunch of url strings together to make a fully functional one.
+        ## constructs query url with parameters as given from above functions.
+        ## makes a link you can go to
+        
 #         print('building_url')
         full_url = '/'.join([self.server_url, self.workspace, self.service])
         full_url += '&' + '&'.join([self.version, self.request, self.feature_name, self.maxFeatures, self.format])
@@ -85,12 +117,18 @@ class wicced():
             else:
                 query_string = query_string + " and bbox(geom," + ",".join([str(self.ul_lon),str(self.ul_lat),str(self.lr_lon),str(self.lr_lat)])+")"            
         if query_string != '':
-            return (full_url + "&" + self.query_start + self.urllib.parse.quote(query_string, "="))
+            return (full_url + "&" + self.query_start + urllib.parse.quote(query_string, "="))
         else:
             return (full_url + "&" + query_string)
         
+
+        
 def get_full_query_by_month(data_source, start, end, ul, lr, feature=False): # This is the prefered way to pull data
-    '''Requests data from the stated data source each month in the interval of time, collecting the unique collection
+    ## Anything in the data source within
+    ## that time will be shown
+    
+    '''
+    Requests data from the stated data source each month in the interval of time, collecting the unique collection
        of all samples in that time interval.
        
        data_source : one of <cema, usgs or ncep>
@@ -151,4 +189,3 @@ def seperate_by_location(dataset, prefix):
     joined = pd.concat(stations, axis = 1)
     new_df = joined.sort_index().fillna(method='ffill')
     return new_df
-
