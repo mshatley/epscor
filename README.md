@@ -27,7 +27,7 @@ What is needed is an application that can be used to run Python code
 Google Collab can work as well)
 
 Pandas and Geopandas are libraries inside of Jupyter Notebook/Lab that can be used to access,
-read data
+read data that need to be installed and saved.
 
 # Wiki
 The Wiki has the different tools that can be used when accessing the data and what kind of data
