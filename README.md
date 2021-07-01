@@ -8,11 +8,6 @@ Various code for our epscor project
  
 ***
 
-The code written here is supposed to help obtain certain information and other functions
-that can be used with the code.
-
-***
-
 
 # List of Contents 
 
