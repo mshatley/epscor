@@ -38,7 +38,6 @@ Pandas and Geopandas are libraries inside of Jupyter Notebook/Lab that can be us
 read data
 
 # Wiki
-
 The Wiki has the different tools that can be used when accessing the data and what kind of data
 is accessed. The Wiki has instructions as to how to get started. How to use the Python code
 to get a selected date, or coordinates or data type. It also goes in depth with each feature
@@ -46,4 +45,19 @@ and explains the params, use and what should the output look like.
 
 # Usage
 
-# What can you do
+* Be able to have large sets of data displayed regardless of what is being looked at/researched.
+* Be able to access data from different data sources.
+
+
+# What can users do
+
+The user can change the data source to see where the data should be taken from. There is a way to
+see the data for a particular data type. The date can be printed in many different formats. The
+date can also have a range in there which will access the data all in between the two dates selected.
+The format can also be changed as to how someone can extract the data whether it is json or csv. A URL
+can be built to send the user to another tab with the data there. There is an option to get the data for
+a full month using the get full query function and the data can be isolated and used for machine learning
+using the separate by location function
+
+
+
