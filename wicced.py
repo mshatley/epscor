@@ -167,7 +167,7 @@ def get_full_query_by_month(data_source, start, end, ul, lr, feature=False): # T
     full_dataset = pd.concat(so_far, axis=0)
     return full_dataset
 
-def seperate_by_location(dataset, prefix):
+def separate_by_location(dataset, prefix):
     '''receives the output of get_full_query_by_month and returns the dataset aligned by time (index)
        and separated by unique GPS location into features
        
