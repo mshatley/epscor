@@ -5,9 +5,6 @@ Various code for our epscor project
 
  There is a getting started page that can help with understanding the purpose of this
  GitHub page called [Getting Started](https://github.com/mshatley/epscor/wiki/Getting-Started)
- 
-***
-
 
 # List of Contents 
 
