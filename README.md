@@ -9,13 +9,13 @@ This repository was created to provide a basic api (wicced.py or wicc.R) and doc
 
 # List of Contents 
 
-* Why
+* <a href= '#Why'>Why</a>
 * Installation
 * [Wiki](https://github.com/mshatley/epscor/wiki)
 * Usage
 * What can users do
 
-# Why
+# <div id="Why">Why</div>
 To create a wiki documentation with use-cases for users to understand and use the Python API.
 There is a lot of data that is gathered when monitoring/researching and the purpose of this
 Wiki, GitHub repo is to assist researchers with being able to access/manipulate the data while
