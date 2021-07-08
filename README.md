@@ -1,5 +1,5 @@
 # Project WiCCED Data Core GitHub Page
-Various code for our epscor project
+This repository was created to provide a basic api (wicced.py or wicc.R) and documentation for researchers working with data on the Project WiCCED Data Core systems.
 
 # Where to go to start
 
