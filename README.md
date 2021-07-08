@@ -30,7 +30,7 @@ Google Collab can work as well)
 Pandas and Geopandas are libraries inside of Jupyter Notebook/Lab that can be used to access,
 read data that need to be installed and saved.
 
-# Wiki
+# [Wiki](https://github.com/mshatley/epscor/wiki)
 We have created a wiki to help support researchers accessing the system.
 
 Within the wiki you will find the following pages:
