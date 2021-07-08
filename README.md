@@ -44,15 +44,14 @@ Help new comers have access to the program.
 
 Contents of the wiki
 
-1. [Getting Started](https://github.com/mshatley/epscor/wiki/Getting-Started)
-2. [addDate](https://github.com/mshatley/epscor/wiki/addDate)
-3. [addDataType](https://github.com/mshatley/epscor/wiki/addDataType)
-4. [get_full_query_by_month](https://github.com/mshatley/epscor/wiki/get_full_query_by_month)
-5. [addBox](https://github.com/mshatley/epscor/wiki/addBox)
-6. [addDateRange](https://github.com/mshatley/epscor/wiki/addDateRange)
-7. [changeFormat](https://github.com/mshatley/epscor/wiki/changeFormat)
-8. [buildURL](https://github.com/mshatley/epscor/wiki/buildURL)
-9. [separate_by_location](https://github.com/mshatley/epscor/wiki/separate_by_location)
+1. [addDate](https://github.com/mshatley/epscor/wiki/addDate)
+2. [addDataType](https://github.com/mshatley/epscor/wiki/addDataType)
+3. [get_full_query_by_month](https://github.com/mshatley/epscor/wiki/get_full_query_by_month)
+4. [addBox](https://github.com/mshatley/epscor/wiki/addBox)
+5. [addDateRange](https://github.com/mshatley/epscor/wiki/addDateRange)
+6. [changeFormat](https://github.com/mshatley/epscor/wiki/changeFormat)
+7. [buildURL](https://github.com/mshatley/epscor/wiki/buildURL)
+8. [separate_by_location](https://github.com/mshatley/epscor/wiki/separate_by_location)
 
 # Usage
 
