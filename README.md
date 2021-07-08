@@ -35,6 +35,13 @@ is accessed. The Wiki has instructions as to how to get started. How to use the 
 to get a selected date, or coordinates or data type. It also goes in depth with each feature
 and explains the params, use and what should the output look like.
 
+Goals for this documentation
+
+Make it easier for user to understand how everything works.
+Be able to make folders and clone repositories on GitHub
+Show how to put together the code to print out specific outputs.
+Help new comers have access to the program.
+
 # Usage
 
 * Be able to have large sets of data displayed regardless of what is being looked at/researched.
