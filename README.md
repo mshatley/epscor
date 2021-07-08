@@ -13,7 +13,7 @@ This repository was created to provide a basic api (wicced.py or wicc.R) and doc
 * Installation
 * [Wiki](https://github.com/mshatley/epscor/wiki)
 * Usage
-* What can you do?
+* What can users do
 
 # Why
 To create a wiki documentation with use-cases for users to understand and use the Python API.
