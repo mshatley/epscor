@@ -31,6 +31,35 @@ Pandas and Geopandas are libraries inside of Jupyter Notebook/Lab that can be us
 read data that need to be installed and saved.
 
 # Wiki
+We have created a wiki to help support researchers accessing the system.
+
+Within the wiki you will find the following pages:
+
+Getting Started (First Steps) - This will help you get all configurations set and ready to access the data.
+
+Methods:
+
+addDate - to help format requested dates into the proper format
+addDataType - to get specific type of data out of a list
+Get_full_query_by_month - used to specify data grabs by month
+addBox- specify a bounding box to return data only falling inside the box
+addDateRange - specify a date range and return data inside that date range
+changeFormat - specify data format for the data returned
+buildURL- creates the fully parameterized url for call to geoserver
+Seperate_by_location- returns data by location (and time)
+Features/Information in Documentation:
+
+Instantiate wicced.py
+Define URL for data access
+List features or data available
+Specify data type of interest
+Specify a date or date range
+Define a bounding box
+Export to CSV or JSON file types
+Project Contributors This code was developed for researchers working with Project WiCCED Data Core.
+
+For questions, please contact tina.callahan@udel.edu
+
 The Wiki has the different tools that can be used when accessing the data and what kind of data
 is accessed. The Wiki has instructions as to how to get started. How to use the Python code
 to get a selected date, or coordinates or data type. It also goes in depth with each feature
