@@ -1,4 +1,5 @@
-# Project WiCCED Data Core GitHub Page
+# Project WiCCED Data Core GitHub Page ![image](https://user-images.githubusercontent.com/58920927/124919410-39b9e400-dfc4-11eb-873d-67593678e8f8.PNG)
+
 This repository was created to provide a basic api (wicced.py or wicc.R) and documentation for researchers working with data on the Project WiCCED Data Core systems.
 
 # Where to go to start
