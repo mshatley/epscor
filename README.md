@@ -10,7 +10,7 @@ Various code for our epscor project
 
 * Why
 * Installation
-* Wiki
+* [Wiki](https://github.com/mshatley/epscor/wiki)
 * Usage
 * What can you do?
 
