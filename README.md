@@ -35,53 +35,30 @@ We have created a wiki to help support researchers accessing the system.
 
 Within the wiki you will find the following pages:
 
-Getting Started (First Steps) - This will help you get all configurations set and ready to access the data.
+1. Getting Started (First Steps) - This will help you get all configurations set and ready to access the data.
 
-Methods:
+2. Methods:
+   * [addDate](https://github.com/mshatley/epscor/wiki/addDate) - to help format requested dates into the proper format
+   * [addDataType](https://github.com/mshatley/epscor/wiki/addDataType) - to get specific type of data out of a list
+   * [Get_full_query_by_month](https://github.com/mshatley/epscor/wiki/get_full_query_by_month) - used to specify data grabs by month
+   * [addBox](https://github.com/mshatley/epscor/wiki/addBox) - specify a bounding box to return data only falling inside the box
+   * [addDateRange](https://github.com/mshatley/epscor/wiki/addDateRange) - specify a date range and return data inside that date range
+   * [changeFormat](https://github.com/mshatley/epscor/wiki/changeFormat) - specify data format for the data returned
+   * [buildURL](https://github.com/mshatley/epscor/wiki/buildURL) - creates the fully parameterized url for call to geoserver
+   * [Seperate_by_location](https://github.com/mshatley/epscor/wiki/separate_by_location) - returns data by location (and time)
 
-addDate - to help format requested dates into the proper format
-addDataType - to get specific type of data out of a list
-Get_full_query_by_month - used to specify data grabs by month
-addBox- specify a bounding box to return data only falling inside the box
-addDateRange - specify a date range and return data inside that date range
-changeFormat - specify data format for the data returned
-buildURL- creates the fully parameterized url for call to geoserver
-Seperate_by_location- returns data by location (and time)
-Features/Information in Documentation:
-
-Instantiate wicced.py
-Define URL for data access
-List features or data available
-Specify data type of interest
-Specify a date or date range
-Define a bounding box
-Export to CSV or JSON file types
+3. Features/Information in Documentation:
+   * Instantiate wicced.py
+   * Define URL for data access
+   * List features or data available
+   * Specify data type of interest
+   * Specify a date or date range
+   * Define a bounding box
+   * Export to CSV or JSON file types
+ 
 Project Contributors This code was developed for researchers working with Project WiCCED Data Core.
 
 For questions, please contact tina.callahan@udel.edu
-
-The Wiki has the different tools that can be used when accessing the data and what kind of data
-is accessed. The Wiki has instructions as to how to get started. How to use the Python code
-to get a selected date, or coordinates or data type. It also goes in depth with each feature
-and explains the params, use and what should the output look like.
-
-Goals for this documentation
-
-Make it easier for user to understand how everything works.
-Be able to make folders and clone repositories on GitHub
-Show how to put together the code to print out specific outputs.
-Help new comers have access to the program.
-
-Contents of the wiki
-
-1. [addDate](https://github.com/mshatley/epscor/wiki/addDate)
-2. [addDataType](https://github.com/mshatley/epscor/wiki/addDataType)
-3. [get_full_query_by_month](https://github.com/mshatley/epscor/wiki/get_full_query_by_month)
-4. [addBox](https://github.com/mshatley/epscor/wiki/addBox)
-5. [addDateRange](https://github.com/mshatley/epscor/wiki/addDateRange)
-6. [changeFormat](https://github.com/mshatley/epscor/wiki/changeFormat)
-7. [buildURL](https://github.com/mshatley/epscor/wiki/buildURL)
-8. [separate_by_location](https://github.com/mshatley/epscor/wiki/separate_by_location)
 
 # Usage
 
