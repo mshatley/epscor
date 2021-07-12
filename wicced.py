@@ -123,7 +123,7 @@ class wicced():
         
 
         
-def get_full_query_by_month(data_source, start, end, ul, lr, feature=False): # This is the prefered way to pull data
+def GetFullQueryByMonth(data_source, start, end, ul, lr, feature=False): # This is the prefered way to pull data
     ## Anything in the data source within
     ## that time will be shown
     
@@ -167,7 +167,7 @@ def get_full_query_by_month(data_source, start, end, ul, lr, feature=False): # T
     full_dataset = pd.concat(so_far, axis=0)
     return full_dataset
 
-def separate_by_location(dataset, prefix):
+def SeperateByLocation(dataset, prefix):
     '''receives the output of get_full_query_by_month and returns the dataset aligned by time (index)
        and separated by unique GPS location into features
        
