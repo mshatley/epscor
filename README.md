@@ -60,13 +60,13 @@ Project Contributors This code was developed for researchers working with Projec
 
 For questions, please contact tina.callahan@udel.edu
 
-# # <div id="Usage">Usage</div>
+# <div id="Usage">Usage</div>
 
 * Be able to have large sets of data displayed regardless of what is being looked at/researched.
 * Be able to access data from different data sources.
 
 
-# # <div id="What can users do">What can users do</div>
+# <div id="What can users do">What can users do</div>
 
 The user can change the data source to see where the data should be taken from. There is a way to
 see the data for a particular data type. The date can be printed in many different formats. The
