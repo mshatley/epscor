@@ -10,10 +10,10 @@ This repository was created to provide a basic api (wicced.py or wicc.R) and doc
 # List of Contents 
 
 * <a href= '#Why'>Why</a>
-* Installation
-* [Wiki](https://github.com/mshatley/epscor/wiki)
-* Usage
-* What can users do
+* <a href= '#Installation'>Installation</a>
+* <a href= '#Wiki'>Wiki</a>
+* <a href= '#Usage'>Usage</a>
+* <a href= '#What can users do'>What can users do</a>
 
 # <div id="Why">Why</div>
 To create a wiki documentation with use-cases for users to understand and use the Python API.
@@ -21,7 +21,7 @@ There is a lot of data that is gathered when monitoring/researching and the purp
 Wiki, GitHub repo is to assist researchers with being able to access/manipulate the data while
 having no programming/CS background
 
-# Installation
+# <div id="Installation">Installation</div>
 What is needed is an application that can be used to run Python code
 
 (For example: Download Anaconda Navigator to have access to Jupyter Notebook, Jupyter Lab,
@@ -30,7 +30,7 @@ Google Collab can work as well)
 Pandas and Geopandas are libraries inside of Jupyter Notebook/Lab that can be used to access,
 read data that need to be installed and saved.
 
-# [Wiki](https://github.com/mshatley/epscor/wiki)
+# <div id="Wiki">Wiki</div>
 We have created a wiki to help support researchers accessing the system.
 
 Within the wiki you will find the following pages:
@@ -60,13 +60,13 @@ Project Contributors This code was developed for researchers working with Projec
 
 For questions, please contact tina.callahan@udel.edu
 
-# Usage
+# # <div id="Usage">Usage</div>
 
 * Be able to have large sets of data displayed regardless of what is being looked at/researched.
 * Be able to access data from different data sources.
 
 
-# What can users do
+# # <div id="What can users do">What can users do</div>
 
 The user can change the data source to see where the data should be taken from. There is a way to
 see the data for a particular data type. The date can be printed in many different formats. The
